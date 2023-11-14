@@ -1,0 +1,4 @@
+br\com\fatec\Controller\LoginController.class
+br\com\fatec\Principal\Criar_ContaController.class
+br\com\fatec\Controller\ChocolateController.class
+br\com\fatec\marketplace\Principal.class
