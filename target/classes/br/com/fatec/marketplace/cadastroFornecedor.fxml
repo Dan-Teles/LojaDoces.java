@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="547.0" prefWidth="577.0" style="-fx-background-color: #d5c8bc;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.Controller.CadastroFornecedorController">
+    <stylesheets>
+        <URL value="@/styles/cadastro_fornecedor.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane id="AnchorPane" layoutY="9.0" prefHeight="425.0" prefWidth="520.0" style="-fx-background-color: #d5c8bc;">
+         <children>
+            <GridPane layoutX="54.0" layoutY="93.0" minHeight="-Infinity" prefHeight="343.0" prefWidth="503.0">
+               <children>
+                  <TextField fx:id="txtRazaoSocial" maxWidth="-Infinity" prefHeight="31.0" prefWidth="244.0" GridPane.columnIndex="1" />
+                  <TextField fx:id="txtNomeFantasia" maxWidth="-Infinity" prefHeight="31.0" prefWidth="246.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin></TextField>
+                  <TextField fx:id="txtCNPJ" maxWidth="-Infinity" prefHeight="31.0" prefWidth="148.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin></TextField>
+                  <Label text="Razão Social:">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font></Label>
+                  <Label text="Nome Fantasia:" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin></Label>
+                  <Label text="CNPJ:" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin></Label>
+                  <Label text="Telefone:" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets left="170.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label text="Email:" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font></Label>
+                  <Label text="Cidade:" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font></Label>
+                  <Label prefHeight="17.0" prefWidth="59.0" text="Bairro:" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="188.0" />
+                     </GridPane.margin></Label>
+                  <PasswordField fx:id="txtLogradouro" maxWidth="-Infinity" prefHeight="31.0" prefWidth="148.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <PasswordField fx:id="txtBairro" maxWidth="-Infinity" prefHeight="31.0" prefWidth="140.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets left="240.0" />
+                     </GridPane.margin></PasswordField>
+                  <Label prefHeight="17.0" prefWidth="41.0" text="CEP:" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin></Label>
+                  <Label text="Logradouro:" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font></Label>
+                  <PasswordField fx:id="txtCidade" maxWidth="-Infinity" prefHeight="31.0" prefWidth="148.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <PasswordField fx:id="txtCEP" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="31.0" prefWidth="148.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin></PasswordField>
+                  <TextField fx:id="txtEmail" maxWidth="-Infinity" prefHeight="31.0" prefWidth="148.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label text="Estado:" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtTelefone" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="31.0" prefWidth="140.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets left="240.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="txtEstado" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="31.0" prefWidth="148.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </TextField>
+                  <Label text="Número:" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="175.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <PasswordField fx:id="txtNumero" maxWidth="-Infinity" prefHeight="31.0" prefWidth="140.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                     <GridPane.margin>
+                        <Insets left="240.0" />
+                     </GridPane.margin>
+                  </PasswordField>
+                  <Button fx:id="btnExibir" alignment="CENTER" graphicTextGap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnExibir_Click" prefHeight="27.0" prefWidth="70.0" style="-fx-background-color: #93bd9a;" text="Buscar" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                     <padding>
+                        <Insets left="15.0" right="15.0" />
+                     </padding>
+                     <GridPane.margin>
+                        <Insets left="270.0" />
+                     </GridPane.margin>
+                  </Button>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="204.0" minWidth="10.0" prefWidth="115.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="407.0" minWidth="10.0" prefWidth="388.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <ImageView fitHeight="85.0" fitWidth="97.0" layoutX="257.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagem/avatar.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <HBox layoutX="35.0" layoutY="461.0" prefHeight="65.0" prefWidth="508.0">
+         <children>
+            <Button fx:id="btnCadastrar" mnemonicParsing="false" onAction="#btnCadastrar_Click" prefHeight="60.0" prefWidth="100.0" style="-fx-background-color: #5aab3e;" text="Cadastrar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="15.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnAtualizar" mnemonicParsing="false" onAction="#btnAtualizar_Click" prefHeight="60.0" prefWidth="100.0" style="-fx-background-color: #5aab3e;" text="Alterar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="30.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnExcluir" mnemonicParsing="false" onAction="#btnExcluir_Click" prefHeight="60.0" prefWidth="100.0" style="-fx-background-color: #5aab3e;" text="Excluir" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="30.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnAdmin" mnemonicParsing="false" onAction="#btnAdmin_Click" prefHeight="60.0" prefWidth="104.0" style="-fx-background-color: #5aab3e;" text="Menu&#10;Admin" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="30.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="759.0" style="-fx-background-color: #d5c8bc;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.Controller.ProdutoController">
+    <stylesheets>
+        <URL value="@/styles/produto.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="tableView" layoutY="53.0" prefHeight="342.0" prefWidth="718.0" style="-fx-background-color: #d5c8bc;">
+        <columns>
+            <TableColumn fx:id="Categoria" prefWidth="114.0" text="Categoria" />
+            <TableColumn fx:id="Produto" prefWidth="214.0" text="Produto" />
+            <TableColumn fx:id="Estoque" prefWidth="83.0" text="Estoque" />
+            <TableColumn fx:id="Valor" prefWidth="84.0" text="Valor" />
+            <TableColumn fx:id="Fornecedor" prefWidth="116.0" text="Fornecedor" />
+            <TableColumn fx:id="Quantidade" prefWidth="105.0" text="Quantidade" />
+        </columns>
+      </TableView>
+      <HBox prefHeight="51.0" prefWidth="718.0" style="-fx-background-color: #93bd9a;">
+         <children>
+            <Label prefHeight="51.0" prefWidth="71.0" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <Label fx:id="lblTodos" onMouseClicked="#lblTodos_Click" prefHeight="40.0" prefWidth="138.0" text="Todos">
+               <font>
+                  <Font name="System Italic" size="31.0" />
+               </font>
+               <padding>
+                  <Insets left="30.0" top="5.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <Label fx:id="lblBolo" onMouseClicked="#lblBolo_Click" prefHeight="74.0" prefWidth="138.0" text="Bolo">
+               <font>
+                  <Font name="System Italic" size="31.0" />
+               </font>
+               <padding>
+                  <Insets left="38.0" top="5.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <Label fx:id="lblChocolate" onMouseClicked="#lblChocolate_Click" prefHeight="74.0" prefWidth="138.0" text="Chocolate">
+               <font>
+                  <Font name="System Italic" size="26.0" />
+               </font>
+               <padding>
+                  <Insets left="12.0" top="5.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <Label fx:id="lblTrufa" onMouseClicked="#lblTrufa_Click" prefHeight="74.0" prefWidth="138.0" text="Trufa">
+               <font>
+                  <Font name="System Italic" size="31.0" />
+               </font>
+               <padding>
+                  <Insets left="30.0" top="5.0" />
+               </padding>
+            </Label>
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <Label prefHeight="52.0" prefWidth="68.0" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+         </children>
+      </HBox>
+      <Separator layoutX="-2.0" layoutY="50.0" prefHeight="5.0" prefWidth="718.0" />
+      <VBox layoutX="718.0" prefHeight="409.0" prefWidth="105.0" style="-fx-background-color: #93bd9a;">
+         <children>
+            <Button fx:id="btnCarrinho" mnemonicParsing="false" onAction="#btnCarrinho_Click" prefHeight="82.0" prefWidth="105.0" style="-fx-background-color: #93bd9a;" text="Carrinho&#10;">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Button>
+            <Separator prefWidth="200.0" />
+            <Label prefHeight="84.0" prefWidth="105.0" />
+            <Separator prefWidth="200.0" />
+            <Button fx:id="btnComprar" mnemonicParsing="false" onAction="#btnComprar_Click" prefHeight="70.0" prefWidth="107.0" style="-fx-background-color: #93bd9a;" text="Comprar&#10;">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font>
+            </Button>
+            <Separator prefWidth="200.0" />
+            <Separator prefWidth="200.0">
+               <VBox.margin>
+                  <Insets top="79.0" />
+               </VBox.margin>
+            </Separator>
+            <Button fx:id="btnDeslogar" mnemonicParsing="false" onAction="#btnDeslogar_Click" prefHeight="82.0" prefWidth="105.0" style="-fx-background-color: #93bd9a;" text="Deslogar">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin></Button>
+            <Separator prefWidth="200.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

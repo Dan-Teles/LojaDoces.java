@@ -1,0 +1,5 @@
+br\com\fatec\Controller\CadastroFornecedorController.class
+br\com\fatec\Controller\CadastroClienteController.class
+br\com\fatec\marketplace\Principal.class
+br\com\fatec\Controller\CadastroProdutoController.class
+br\com\fatec\Controller\LoginController.class
