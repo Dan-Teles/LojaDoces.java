@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: d5c8bc;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.Controller.AdminController">
+    <stylesheets>
+        <URL value="@/styles/admin.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutX="42.0" layoutY="27.0" prefHeight="148.0" prefWidth="155.0" style="-fx-background-color: d9cbbf; -fx-border-color: a1978f;">
+         <children>
+            <Button fx:id="btnFornecedor" layoutX="13.0" layoutY="96.0" mnemonicParsing="false" onAction="#btnFornecedor_Click" prefHeight="38.0" prefWidth="130.0" style="-fx-background-color: d9cbbf;" text="Cadastrar Fornecedor" />
+            <ImageView fitHeight="85.0" fitWidth="97.0" layoutX="36.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagem/person.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="223.0" layoutY="27.0" prefHeight="148.0" prefWidth="155.0" style="-fx-background-color: d9cbbf; -fx-border-color: a1978f;">
+         <children>
+            <Button fx:id="btnCliente" layoutX="13.0" layoutY="96.0" mnemonicParsing="false" onAction="#btnCliente_Click" prefHeight="38.0" prefWidth="130.0" style="-fx-background-color: d9cbbf;" text="Cadastrar Cliente" />
+            <ImageView fitHeight="85.0" fitWidth="97.0" layoutX="36.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagem/person%20(3).png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="btnItem" layoutX="400.0" layoutY="27.0" prefHeight="148.0" prefWidth="155.0" style="-fx-background-color: d9cbbf; -fx-border-color: a1978f;">
+         <children>
+            <Button fx:id="btnCadastrarProduto" layoutX="13.0" layoutY="96.0" mnemonicParsing="false" onAction="#btnCadastrarProduto_Click" prefHeight="38.0" prefWidth="149.0" style="-fx-background-color: d9cbbf;" text="Cadastrar Produto" />
+            <ImageView fitHeight="85.0" fitWidth="97.0" layoutX="39.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagem/choco.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="42.0" layoutY="200.0" prefHeight="148.0" prefWidth="155.0" style="-fx-background-color: d9cbbf; -fx-border-color: a1978f;">
+         <children>
+            <Button fx:id="btnLogin" layoutX="13.0" layoutY="96.0" mnemonicParsing="false" onAction="#btnLogin_Click" prefHeight="38.0" prefWidth="130.0" style="-fx-background-color: d9cbbf;" text="Login" />
+            <ImageView fitHeight="85.0" fitWidth="97.0" layoutX="36.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagem/person%20(2).png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="223.0" layoutY="200.0" prefHeight="148.0" prefWidth="155.0" style="-fx-background-color: d9cbbf; -fx-border-color: a1978f;">
+         <children>
+            <Button fx:id="btnProduto" layoutX="13.0" layoutY="96.0" mnemonicParsing="false" onAction="#btnProduto_Click" prefHeight="38.0" prefWidth="130.0" style="-fx-background-color: d9cbbf;" text="Produtos" />
+            <ImageView fitHeight="85.0" fitWidth="97.0" layoutX="36.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagem/doce.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="400.0" layoutY="200.0" prefHeight="148.0" prefWidth="164.0" style="-fx-background-color: d9cbbf; -fx-border-color: a1978f;">
+         <children>
+            <Button fx:id="btnCarrinho" layoutX="13.0" layoutY="96.0" mnemonicParsing="false" onAction="#btnCarrinho_Click" prefHeight="38.0" prefWidth="130.0" style="-fx-background-color: d9cbbf;" text="Carrinho" />
+            <ImageView fitHeight="85.0" fitWidth="97.0" layoutX="36.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagem/carrinho.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

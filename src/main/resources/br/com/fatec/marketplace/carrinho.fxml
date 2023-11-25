@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="486.0" prefWidth="697.0" style="-fx-background-color: #d5c8bc;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.Controller.CarrinhoController">
+   <children>
+      <TableView fx:id="tableView" layoutY="75.0" prefHeight="411.0" prefWidth="698.0" style="-fx-background-color: #c2b7ac;">
+         <columns>
+            <TableColumn fx:id="idPedido" prefWidth="81.0" text="idPedido" />
+            <TableColumn fx:id="login" prefWidth="189.0" text="Login" />
+            <TableColumn fx:id="produto" prefWidth="232.0" text="Produto" />
+            <TableColumn fx:id="quantidade" prefWidth="98.0" text="Quantidade" />
+            <TableColumn fx:id="valor" prefWidth="103.0" text="Valor" />
+         </columns>
+      </TableView>
+      <HBox prefHeight="76.0" prefWidth="698.0" style="-fx-background-color: #93bd9a;">
+         <children>
+            <Label prefHeight="75.0" prefWidth="92.0" />
+            <Separator orientation="VERTICAL" prefHeight="200.0">
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </Separator>
+            <Button fx:id="btnVoltar" ellipsisString="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnVoltar_Click" prefHeight="75.0" prefWidth="198.0" style="-fx-background-color: #93bd9a;" text="Mostrar Produtos" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Button>
+            <Separator orientation="VERTICAL" prefHeight="76.0" prefWidth="0.0" />
+            <Button fx:id="btnLogin" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnLogin_Click" prefHeight="74.0" prefWidth="193.0" style="-fx-background-color: #93bd9a;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+            </Button>
+            <Separator orientation="VERTICAL" prefHeight="76.0" prefWidth="0.0" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
